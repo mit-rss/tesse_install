@@ -152,7 +152,7 @@ Navigate to this directory in your terminal, then:
 
 `./TESSE`
 
-The first time you do this it will refuse to open due to security preferences - click the Cancel button and open your System Preferences. 
+The first time you do this it may refuse to open due to security preferences - click the Cancel button and open your System Preferences. 
 Select Security & Privacy: at the bottom you should see a message that says “TESSE was blocked from use because it is not from an identified developer.” 
 Click the “Open Anyway” button, then the “Open” button on the popup that comes up. 
 You will only have to do all this the first time you run a given executable - in the future it should run fine with `./TESSE`.
@@ -236,9 +236,10 @@ For more troubleshooting tips, see the next section on troubleshooting.
 
 ## Troubleshooting Networking
 
-If you see the following socket.error when you roslaunch the bridge node (and don’t see anything in rviz or anything being published to /tesse/imu or /tesse/odom), it’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
+If you see the following `socket.error` when you roslaunch the bridge node (and don’t see anything in rviz or anything being published to `/tesse/imu` or `/tesse/odom`), it’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
 
-[https://lh3.googleusercontent.com/SL2m5XnTLsBU7VrzoA-Xf8wTliitOvTZ0vlO6o3l2n2awoMN5LS5sW6vL-81FPYOF2gZeTPI3ZucTxUHLSSxRlQ7DClcc6WxHSQcW4YKEjyZoj5iVE0JKgMWe9JkqFVPXVnrUjkw](https://lh3.googleusercontent.com/SL2m5XnTLsBU7VrzoA-Xf8wTliitOvTZ0vlO6o3l2n2awoMN5LS5sW6vL-81FPYOF2gZeTPI3ZucTxUHLSSxRlQ7DClcc6WxHSQcW4YKEjyZoj5iVE0JKgMWe9JkqFVPXVnrUjkw)
+
+![](error_screenshot.png)
 
 If you get the following error message after initialization:
 
