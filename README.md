@@ -23,6 +23,12 @@ We will be using a modified version of this simulator for RSS.
 * Final Race Course: [https://www.youtube.com/watch?v=MItig9HHPyk&ab_channel=MITSPARKLab](https://www.youtube.com/watch?v=MItig9HHPyk&ab_channel=MITSPARKLab)
 * MIT TESSE repository: [https://github.com/MIT-TESSE/](https://github.com/MIT-TESSE/)
 
+## Computer Specs Survey
+
+Before you start on the install below, please fill out this form: https://forms.gle/F2nZF36xe85Bzqex5
+
+We are collecting this information to see if anyone will have potential problems with running the following simulator.
+
 ## ROS Bridge in VM
 
 **NOTE: We will now set up the ROS bridge inside your VM - if you are running native Linux and not using a VM, you can set up the ROS bridge on your native machine.**
@@ -247,6 +253,10 @@ If you get the following error message after initialization:
 
 This means that the simulator isn’t responding to requests. 
 Wait a few seconds; the simulator sometimes takes a long time to set up the sensors. 
+
+## Submission
+
+Once you are done with the TESSE setup, please submit this Google Form: https://forms.gle/DMMbMqEnKWnUjFdd7
 At some point the simulator will unfreeze and you’ll stop getting the error; everything should be good. 
 If this continues ad infinitum and the simulator maintains a high (or crazy low) fps, contact us.
 
