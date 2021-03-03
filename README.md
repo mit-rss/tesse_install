@@ -133,7 +133,7 @@ Here, you will need to make two changes: 1) set the default argument for sim_ip 
 **NOTE: Complete this section on your host OS, not a VM - the TESSE executable would be too slow if you tried to run it from within your VM. 
 Instead, it will communicate with your VM through a local network which you will set up in the following sections.**
 
-Download the 2020 Final Challenge Unity executable corresponding **to your host OS** [here](https://drive.google.com/drive/folders/1ueXze_U5NYQe6BfhmdkcbjH0JcV2cUlW?usp=sharing). 
+Download the Unity executable corresponding **to your host OS** [here](https://drive.google.com/drive/folders/1ueXze_U5NYQe6BfhmdkcbjH0JcV2cUlW?usp=sharing). 
 Go to the folder corresponding to your **your native OS**, and download the zip file. 
 If there are multiple zip files, download the latest one (highest version number). 
 Once downloaded, unzip it.
