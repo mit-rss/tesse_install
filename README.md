@@ -1,5 +1,9 @@
 # Setting up the Photorealistic TESSE Simulator
 
+| **Due Date**  | **Friday, March 5th at 11:59 PM ET**                                 | **Wednesday, March 10th at 1:00 PM ET** |
+|---------------|----------------------------------------------------------------------------| -----------------------------------|
+|  **Submission**   | [Computer specs survey](https://forms.gle/F2nZF36xe85Bzqex5) | [TESSE screenshot survey](https://forms.gle/DMMbMqEnKWnUjFdd7)
+
 ## Introduction
 With the advent of modern computer graphics software and hardware, graphics and physics simulators have become increasingly pervasive in robotics. 
 Many simulators, such as 
@@ -22,6 +26,10 @@ We will be using a modified version of this simulator for RSS.
 * FlightGoggles: [https://flightgoggles.mit.edu/](https://flightgoggles.mit.edu/)
 * Final Race Course: [https://www.youtube.com/watch?v=MItig9HHPyk&ab_channel=MITSPARKLab](https://www.youtube.com/watch?v=MItig9HHPyk&ab_channel=MITSPARKLab)
 * MIT TESSE repository: [https://github.com/MIT-TESSE/](https://github.com/MIT-TESSE/)
+
+## Submission
+
+You have _two_ Google Form surveys to fill out. The [first one](https://forms.gle/F2nZF36xe85Bzqex5) is asking for your computer specs and should be submitted as soon as possible (with an actual deadline of March 5th at 11:59 PM ET). It is the same one in the following section. The [second](https://forms.gle/DMMbMqEnKWnUjFdd7) is asking for confirmation that you set up TESSE correctly, plus TESSE's performance. This is due at the same time as the wall following lab (March 10th, 1:00 PM ET). **However, we suggest you get started on this as soon as possible in case you need to debug the install with a TA.**
 
 ## Computer Specs Survey
 
@@ -254,9 +262,7 @@ If you get the following error message after initialization:
 This means that the simulator isn’t responding to requests. 
 Wait a few seconds; the simulator sometimes takes a long time to set up the sensors. 
 
-## Submission
 
-Once you are done with the TESSE setup, please submit this Google Form: https://forms.gle/DMMbMqEnKWnUjFdd7
 At some point the simulator will unfreeze and you’ll stop getting the error; everything should be good. 
 If this continues ad infinitum and the simulator maintains a high (or crazy low) fps, contact us.
 
@@ -266,3 +272,7 @@ Sometimes it doesn’t like it when you kill the ROS bridge and restart it soon 
 If you’re on Windows with a VM and you’re not seeing data published to `/tesse/imu` or `/tesse/odom`, set use_broadcast to true in the launch file. 
 If you don't see laser scan data visualized and there are no errors, check that Global Options > Fixed Frame is set to `base_link` in RViz. 
 If it is, try switching it to another option, then switching back to `base_link`.
+
+## TESSE Submission
+
+Once you are done with the TESSE setup, please submit this Google Form: https://forms.gle/DMMbMqEnKWnUjFdd7
