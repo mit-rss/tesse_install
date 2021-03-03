@@ -88,15 +88,13 @@ NOTE: incl. latest version of opencv-python that supports for 2.7
 
 `wstool update`
 
-### Tests to ensure ROS bridge has installed correctly
-
-#### 1) Compile code
+#### 6) Compile code
 
 `cd ../`
 
 `catkin_make`
 
-#### 2) Refresh environment
+#### 7) Refresh environment
 
 `source ~/racecar_ws/devel/setup.bash`
 
