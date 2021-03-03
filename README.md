@@ -240,11 +240,6 @@ Then launch rviz in a new terminal:
 
 In rviz, make sure that you can see the laser scan from the simulator, and that it moves around when you move your car around in TESSE on your host machine.
 
-
-Finally, check metadata by running in a new terminal:
-
-`rostopic echo /tesse/imu`
-
 If you get a clock error, check that you launched the executable with the --client_ip_addr flag and that you set it to the VM IP. 
 For more troubleshooting tips, see the next section on troubleshooting.
 
