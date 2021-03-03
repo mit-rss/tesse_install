@@ -245,7 +245,7 @@ For more troubleshooting tips, see the next section on troubleshooting.
 
 ## Troubleshooting Networking
 
-If you see the following `socket.error` when you roslaunch the bridge node (and don’t see anything in rviz or anything being published to `/tesse/imu` or `/tesse/odom`), it’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
+If you see the following `socket.error` when you roslaunch the bridge node (and don’t see anything in rviz), it’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
 
 
 ![](error_screenshot.png)
