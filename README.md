@@ -264,7 +264,7 @@ If this continues ad infinitum and the simulator maintains a high (or crazy low)
 If you’re getting an error like above but with image_cb instead of clock_cb , try restarting your simulator. 
 Sometimes it doesn’t like it when you kill the ROS bridge and restart it soon after.
 
-If you’re on Windows with a VM and you’re not seeing data published to `/tesse/imu` or `/tesse/odom`, set use_broadcast to true in the launch file. 
+If you’re on Windows with a VM and you’re not seeing data published to `/tesse/odom`, set use_broadcast to true in the launch file. 
 If you don't see laser scan data visualized and there are no errors, check that Global Options > Fixed Frame is set to `base_link` in RViz. 
 If it is, try switching it to another option, then switching back to `base_link`.
 
