@@ -134,7 +134,7 @@ Here, you will need to make two changes: 1) set the default argument for sim_ip 
 Instead, it will communicate with your VM through a local network which you will set up in the following sections.**
 
 Download the Unity executable corresponding **to your host OS** [here](https://drive.google.com/drive/folders/1ueXze_U5NYQe6BfhmdkcbjH0JcV2cUlW?usp=sharing). 
-Go to the folder corresponding to your **your native OS**, and download the zip file. 
+Go to the folder corresponding to **your native OS**, and download the zip file. 
 If there are multiple zip files, download the latest one (highest version number). 
 Once downloaded, unzip it.
 
