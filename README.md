@@ -128,7 +128,7 @@ Press (windows key) + R and type “cmd.exe” into the textbox to open a comman
 At the shell prompt, type `ipconfig`.
 The output of ipconfig will list various network interfaces and their associated IP addresses.
 Look out for an entry that looks something like “Ethernet Adapter ??? (?? VMware ??)” and make note of the IP address listed under “IPv4 Address”.
-If it has the form 192.xxx.yyy.zzz and the xxx numbers match your VM’s IP address, then you can be sure that this is the IP address you want to use as your host machine’s IP address.
+If it has the form 192.xxx.yyy.z and the xxx and yyy (or yy) numbers match your VM’s IP address, then you can be sure that this is the IP address you want to use as your host machine’s IP address.
 
 ### Final step for either OS
 
