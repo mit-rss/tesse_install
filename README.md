@@ -242,10 +242,30 @@ For more troubleshooting tips, see the next section on troubleshooting.
 
 ## Troubleshooting Networking
 
-If you see the following `socket.error` when you roslaunch the bridge node (and don’t see anything in rviz), it’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
-
+#### 1) socket error
+If you see the following `socket.error` when you roslaunch the bridge node (and don’t see anything in rviz):
 
 ![](error_screenshot.png)
+
+It’s possible your IP address has changed and you will need to go through the steps in the Networking section again with the new IP address(es) - this may happen periodically.
+
+It may also be that you set your IP addresses incorrectly - double check that you followed all of the IP-related instructions in the Networking section correctly.
+
+Another possibility is that you have a firewall preventing communication - make sure that you don't have a firewall up on your host machine, and if that doesn't work you can try running the following commands from within your VM to turn off any firewalls (they will be backed up so you can restore them later if desired):
+
+`export PATH=$PATH:/sbin`
+
+`sudo iptables -S > iptables.bak`
+
+`sudo iptables -F`
+
+`cd ~/racecar_ws`
+
+`catkin_make`
+
+`source ~/racecar_ws/devel/setup.bash`
+
+#### 2) clock_cb AttributeError
 
 If you get the following error message after initialization:
 
@@ -254,14 +274,20 @@ If you get the following error message after initialization:
 This means that the simulator isn’t responding to requests.
 Wait a few seconds; the simulator sometimes takes a long time to set up the sensors.
 
-
 At some point the simulator will unfreeze and you’ll stop getting the error; everything should be good.
 If this continues ad infinitum and the simulator maintains a high (or crazy low) fps, contact us.
+
+#### 3) image_cb AttributeError
 
 If you’re getting an error like above but with image_cb instead of clock_cb , try restarting your simulator.
 Sometimes it doesn’t like it when you kill the ROS bridge and restart it soon after.
 
+#### 4) not seeing odometry data published to /tesse/odom
+
 If you’re on Windows with a VM and you’re not seeing data published to `/tesse/odom`, set use_broadcast to true in the launch file.
+
+#### 5) not seeing laser scan data in rviz
+
 If you don't see laser scan data visualized and there are no errors, check that Global Options > Fixed Frame is set to `base_link_gt` in RViz.
 If it is, try switching it to another option, then switching back to `base_link_gt`.
 
