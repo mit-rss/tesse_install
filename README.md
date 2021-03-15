@@ -251,7 +251,7 @@ It’s possible your IP address has changed and you will need to go through the 
 
 It may also be that you set your IP addresses incorrectly - double check that you followed all of the IP-related instructions in the Networking section correctly.
 
-Another possibility is that you have a firewall preventing communication - make sure that you don't have a firewall up on your host machine, and if that doesn't work you can try running the following commands from within your VM to turn off any firewalls (they will be backed up so you can restore them later if desired):
+Another possibility is that you have a firewall preventing communication - make sure you turn off firewalls on your host machine. Once you've turned off the firewall in your hostOS restart your computer to make sure it took effect. If that doesn't work you can try running the following commands from within your VM to turn off any firewalls (they will be backed up so you can restore them later if desired):
 
 `export PATH=$PATH:/sbin`
 
