@@ -265,6 +265,8 @@ Another possibility is that you have a firewall preventing communication - make 
 
 `source ~/racecar_ws/devel/setup.bash`
 
+You may then need to restart your VM for the changes to take effect.
+
 #### 2) clock_cb AttributeError
 
 If you get the following error message after initialization:
